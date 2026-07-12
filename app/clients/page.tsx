@@ -577,7 +577,7 @@ export default function ClientsPage() {
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="ex: TechNova"
+                      placeholder="ex: Technologie"
                       style={{
                         width: "100%", padding: "10px 12px", borderRadius: 8, border: "1px solid var(--border)",
                         background: "var(--bg-subtle)", color: "var(--text-primary)", fontSize: 13, outline: "none",

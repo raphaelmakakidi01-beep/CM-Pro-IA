@@ -5,7 +5,7 @@ import { StatCard } from "@/components/dashboard/StatCard";
 import { ActivityFeed } from "@/components/dashboard/ActivityFeed";
 import { AIAlerts } from "@/components/dashboard/AIAlerts";
 import { TodaySchedule } from "@/components/dashboard/TodaySchedule";
-import { mockStats, mockEngagementData } from "@/lib/mock-data";
+import { mockStats, mockEngagementData, mockUser } from "@/lib/mock-data";
 import { formatNumber, formatCurrency } from "@/lib/utils";
 import {
   Users, Send, TrendingUp, Radio,
@@ -142,7 +142,7 @@ const initialReviewPosts = [
     network: "instagram",
     postCount: 1,
     imageUrl: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&fit=crop",
-    text: "La capsule Flore & Co est enfin disponible. Matières éco-responsables et coupes intemporelles pour un été tout en légèreté. 🌿 #slowfashion #summer",
+    text: "Notre nouvelle collection est enfin disponible. Matières éco-responsables et coupes intemporelles pour un été tout en légèreté. 🌿 #slowfashion #summer",
     likes: 312,
     comments: 24,
   }
@@ -234,7 +234,7 @@ export default function DashboardPage() {
       <div style={{ marginBottom: 24 }}>
         <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 4 }}>Tableau de bord</h1>
         <p style={{ fontSize: 13, color: "var(--text-secondary)" }}>
-          Bonjour Sophie — {today}
+          Bonjour {mockUser.name.split(" ")[0]} — {today}
         </p>
       </div>
 

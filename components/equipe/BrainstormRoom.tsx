@@ -5,7 +5,7 @@ import {
   Sparkles, Loader2, AlertCircle, Calendar, Plus, MessageSquare, ClipboardList, Info,
   FileText, Palette, Video, Laptop, X, Check, Save, Eye,
 } from "lucide-react";
-import { mockClients, mockTeamMembers } from "@/lib/mock-data";
+import { mockClients, mockTeamMembers, mockUser } from "@/lib/mock-data";
 import type { AIAgent, MeetingMessage } from "@/lib/mock-data";
 
 interface BrainstormRoomProps {
@@ -99,7 +99,7 @@ Texte à l'écran : "Nouvelle date : Mardi 25"
 Voix off : "Parfois, le timing parfait demande un léger contretemps..."
 
 👥 [00:05 - 00:18] Prise de parole :
-Lucas Bernard (face caméra, cadre pro, lumière douce).
+Le créateur de contenu (face caméra, cadre pro, lumière douce).
 Voix off / Live : "Pour vous accueillir dans les meilleures conditions logistiques chez ${client.name}, notre rencontre est décalée au mardi 25 de ce mois."
 
 ⚙️ [00:18 - 00:25] B-roll :
@@ -147,8 +147,8 @@ Voix off : "Vos accès restent valides. On se retrouve le 25 !"`,
       {
         id: "msg-brief",
         senderId: "user",
-        senderName: "Sophie Martin",
-        senderAvatar: "SM",
+        senderName: mockUser.name,
+        senderAvatar: mockUser.avatar,
         role: "Manager",
         content: `**Brief de lancement : ${title}**\n\n${brief}\n\nClient ciblé : **${client.name}** (${client.sector}).\n\nLançons le tour de table pour cadrer ce projet. Qui commence ?`,
         time: new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }),
@@ -241,8 +241,8 @@ Voix off : "Vos accès restent valides. On se retrouve le 25 !"`,
     const userMsg: MeetingMessage = {
       id: `msg-user-${Date.now()}`,
       senderId: "user",
-      senderName: "Sophie Martin",
-      senderAvatar: "SM",
+      senderName: mockUser.name,
+      senderAvatar: mockUser.avatar,
       role: "Manager",
       content: userInput,
       time: new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }),
@@ -291,7 +291,7 @@ Voix off : "Vos accès restent valides. On se retrouve le 25 !"`,
         targetType = "ai";
       } else {
         targetedId = "t2";
-        targetName = "Lucas Bernard";
+        targetName = "Créateur de contenu";
         targetRole = "Content Creator";
         targetType = "human";
       }
@@ -301,9 +301,9 @@ Voix off : "Vos accès restent valides. On se retrouve le 25 !"`,
     setTypingText(`${targetName} prépare sa réponse suite à votre consigne...`);
 
     setTimeout(() => {
-      let customReply = `Bien reçu Sophie ! J'adapte ma proposition selon ta remarque : \n\n« Campagne révisée : focus sur la sobriété et l'aspect rassurant. Visuel épuré en cours de déclinaison avec les polices de la marque. »`;
+      let customReply = `Bien reçu ! J'adapte ma proposition selon ta remarque : \n\n« Campagne révisée : focus sur la sobriété et l'aspect rassurant. Visuel épuré en cours de déclinaison avec les polices de la marque. »`;
       if (targetedId === "t4") {
-        customReply = `Compris Sophie. Je vais forcer un filtre plus sombre sur le fond et flouter légèrement les éléments secondaires pour faire ressortir la date du 25 en bleu/or. Je te montre le Figma à 11h.`;
+        customReply = `Compris. Je vais forcer un filtre plus sombre sur le fond et flouter légèrement les éléments secondaires pour faire ressortir la date du 25 en bleu/or. Je te montre le Figma à 11h.`;
       } else if (targetedId === "ai1") {
         customReply = `Ajustement du texte en cours : \n\n« Événement reporté au 25. Vos accès restent valides. Nous prenons toutes les mesures pour vous recevoir sereinement. Des questions ? Notre équipe reste à votre entière disposition. »`;
       }
@@ -1042,7 +1042,7 @@ Voix off : "Vos accès restent valides. On se retrouve le 25 !"`,
                         💬 "Pour vous offrir la meilleure expérience possible..."
                       </div>
                       <div style={{ fontSize: 7, color: "rgba(255,255,255,0.8)" }}>
-                        ♫ Son original · Lucas Bernard
+                        ♫ Son original · Créateur de contenu
                       </div>
                     </div>
                     {/* Phone Notch */}

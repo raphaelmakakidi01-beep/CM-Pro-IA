@@ -9,36 +9,36 @@ const conversationsMap: Record<string, {
   messages: Array<{ id: string; role: "me" | "other"; content: string; time: string }>;
 }> = {
   m1: {
-    user: { name: "Lucas Bernard", avatar: "LB", role: "Graphiste Senior", status: "online" },
+    user: { name: "Créateur de contenu", avatar: "CC", role: "Content Creator", status: "online" },
     messages: [
-      { id: "1", role: "other", content: "Salut ! J'ai terminé les visuels pour le Client Restauration, ils sont dans la bibliothèque de médias.", time: "10:32" },
+      { id: "1", role: "other", content: "J'ai terminé les visuels pour le Client Restauration, ils sont dans la bibliothèque de médias.", time: "10:32" },
       { id: "2", role: "me", content: "Super ! Je vais les valider tout à l'heure. Tu peux commencer à préparer ceux du Client Technologie ?", time: "10:35" },
       { id: "3", role: "other", content: "Pas de problème. Il me faut juste le brief créa du Client Technologie. Tu peux me le partager ?", time: "10:36" },
-      { id: "4", role: "me", content: "Je te l'envoie dans la bibliothèque. Format 1080x1080 et 1080x1920 comme d'habitude. Merci Lucas !", time: "10:38" },
+      { id: "4", role: "me", content: "Je te l'envoie dans la bibliothèque. Format 1080x1080 et 1080x1920 comme d'habitude.", time: "10:38" },
     ]
   },
   m2: {
-    user: { name: "Emma Rousseau", avatar: "ER", role: "Analyste Web & SEO", status: "online" },
+    user: { name: "Responsable Social Media", avatar: "RS", role: "Social Media Manager", status: "online" },
     messages: [
-      { id: "1", role: "other", content: "Coucou, le rapport mensuel du Client E-commerce est prêt à être validé sur la plateforme.", time: "09:15" },
-      { id: "2", role: "me", content: "Génial Emma. Les chiffres d'engagement sur Instagram ont augmenté de combien ?", time: "09:20" },
+      { id: "1", role: "other", content: "Le rapport mensuel du Client E-commerce est prêt à être validé sur la plateforme.", time: "09:15" },
+      { id: "2", role: "me", content: "Génial. Les chiffres d'engagement sur Instagram ont augmenté de combien ?", time: "09:20" },
       { id: "3", role: "other", content: "On fait +12.4% d'engagement grâce aux carrousels d'été ! Tous les indicateurs sont au vert.", time: "09:22" },
       { id: "4", role: "me", content: "Formidable, j'envoie le PDF au client dès que j'ai jeté un coup d'œil.", time: "09:25" }
     ]
   },
   m3: {
-    user: { name: "Thomas Petit", avatar: "TP", role: "Lead Developer", status: "away" },
+    user: { name: "Graphiste", avatar: "GR", role: "Graphic Designer", status: "away" },
     messages: [
-      { id: "1", role: "other", content: "Salut, j'ai besoin de la charte graphique pour le Client Technologie en haute définition (SVG ou PNG HD).", time: "Hier 16:40" },
+      { id: "1", role: "other", content: "J'ai besoin de la charte graphique pour le Client Technologie en haute définition (SVG ou PNG HD).", time: "Hier 16:40" },
       { id: "2", role: "me", content: "Je demande ça à l'équipe créative et je te le dépose sur le drive partagé.", time: "Hier 17:00" },
       { id: "3", role: "other", content: "Top, merci. C'est pour intégrer le logo sur le nouveau widget d'aide.", time: "Hier 17:05" }
     ]
   },
   m4: {
-    user: { name: "Camille Durand", avatar: "CD", role: "Account Manager", status: "offline", lastSeen: "il y a 2h" },
+    user: { name: "Analyste", avatar: "AN", role: "Analytics Specialist", status: "offline", lastSeen: "il y a 2h" },
     messages: [
-      { id: "1", role: "other", content: "Les stats du mois de juin sont excellentes pour le Client Cosmétiques ! Le client est super content de notre travail de community management.", time: "Hier 14:10" },
-      { id: "2", role: "me", content: "Ah super nouvelle ! Ils veulent renouveler leur contrat de 6 mois du coup ?", time: "Hier 14:15" },
+      { id: "1", role: "other", content: "Les stats du mois de juin sont excellentes pour le Client Cosmétiques ! Le client est très satisfait de notre travail.", time: "Hier 14:10" },
+      { id: "2", role: "me", content: "Super nouvelle ! Ils veulent renouveler leur contrat du coup ?", time: "Hier 14:15" },
       { id: "3", role: "other", content: "Oui tout à fait. Je prépare l'avenant de facturation et je te l'envoie pour signature.", time: "Hier 14:20" }
     ]
   }

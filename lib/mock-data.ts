@@ -258,10 +258,10 @@ export const mockAIAlerts = [
 
 export const mockTeamMembers = [
   { id: "t1", name: "Administrateur", role: "Community Manager Principal", avatar: "AD", email: "admin@agence-cm.fr", clients: 4, status: "online" },
-  { id: "t2", name: "Lucas Bernard", role: "Content Creator", avatar: "LB", email: "lucas@agence-cm.fr", clients: 3, status: "online" },
-  { id: "t3", name: "Emma Rousseau", role: "Social Media Manager", avatar: "ER", email: "emma@agence-cm.fr", clients: 2, status: "away" },
-  { id: "t4", name: "Thomas Petit", role: "Graphic Designer", avatar: "TP", email: "thomas@agence-cm.fr", clients: 0, status: "offline" },
-  { id: "t5", name: "Camille Durand", role: "Analytics Specialist", avatar: "CD", email: "camille@agence-cm.fr", clients: 1, status: "online" },
+  { id: "t2", name: "Créateur de contenu", role: "Content Creator", avatar: "CC", email: "contenu@agence-cm.fr", clients: 3, status: "online" },
+  { id: "t3", name: "Responsable Social Media", role: "Social Media Manager", avatar: "RS", email: "social@agence-cm.fr", clients: 2, status: "away" },
+  { id: "t4", name: "Graphiste", role: "Graphic Designer", avatar: "GR", email: "design@agence-cm.fr", clients: 0, status: "offline" },
+  { id: "t5", name: "Analyste", role: "Analytics Specialist", avatar: "AN", email: "analytics@agence-cm.fr", clients: 1, status: "online" },
 ];
 
 export const mockInvoices = [
@@ -292,10 +292,10 @@ export const mockCalendarEvents = [
 ];
 
 export const mockMessages = [
-  { id: "m1", from: "Lucas Bernard", fromAvatar: "LB", content: "J'ai terminé les visuels pour le Client Restauration, ils sont dans la bibliothèque.", time: "10:32", unread: true },
-  { id: "m2", from: "Emma Rousseau", fromAvatar: "ER", content: "Le rapport mensuel du Client E-commerce est prêt à valider.", time: "09:15", unread: true },
-  { id: "m3", from: "Thomas Petit", fromAvatar: "TP", content: "Besoin de la charte graphique du Client Technologie en HD.", time: "Hier", unread: false },
-  { id: "m4", from: "Camille Durand", fromAvatar: "CD", content: "Les stats du mois de juin sont excellentes pour le Client Cosmétiques !", time: "Hier", unread: false },
+  { id: "m1", from: "Créateur de contenu", fromAvatar: "CC", content: "J'ai terminé les visuels pour le Client Restauration, ils sont dans la bibliothèque.", time: "10:32", unread: true },
+  { id: "m2", from: "Responsable Social Media", fromAvatar: "RS", content: "Le rapport mensuel du Client E-commerce est prêt à valider.", time: "09:15", unread: true },
+  { id: "m3", from: "Graphiste", fromAvatar: "GR", content: "Besoin de la charte graphique du Client Technologie en HD.", time: "Hier", unread: false },
+  { id: "m4", from: "Analyste", fromAvatar: "AN", content: "Les stats du mois de juin sont excellentes pour le Client Cosmétiques !", time: "Hier", unread: false },
 ];
 
 export const networkColors: Record<string, string> = {
