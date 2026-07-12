@@ -110,8 +110,8 @@ const initialReviewPosts = [
   {
     id: "rev-1",
     clientId: "c1",
-    clientName: "Maison Blanc",
-    clientLogo: "MB",
+    clientName: "Client Restauration",
+    clientLogo: "CR",
     clientColor: "#F59E0B",
     network: "instagram",
     postCount: 3,
@@ -123,8 +123,8 @@ const initialReviewPosts = [
   {
     id: "rev-2",
     clientId: "c2",
-    clientName: "TechNova",
-    clientLogo: "TN",
+    clientName: "Client Technologie",
+    clientLogo: "CT",
     clientColor: "#2563EB",
     network: "linkedin",
     postCount: 2,
@@ -136,8 +136,8 @@ const initialReviewPosts = [
   {
     id: "rev-3",
     clientId: "c3",
-    clientName: "Flore & Co",
-    clientLogo: "FC",
+    clientName: "Client E-commerce",
+    clientLogo: "CE",
     clientColor: "#7C3AED",
     network: "instagram",
     postCount: 1,

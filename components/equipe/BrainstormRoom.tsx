@@ -22,7 +22,7 @@ export function BrainstormRoom({ agents, onClose, onPlanTasks }: BrainstormRoomP
   const [brief, setBrief] = useState(
     "Nous devons lancer une campagne pour annoncer le report de notre événement au 25 du mois, avec un ton sobre, professionnel et un message rassurant pour les participants."
   );
-  const [clientId, setClientId] = useState(mockClients[0].id);
+  const [clientId, setClientId] = useState(mockClients[0]?.id || "");
 
   // Participant selection (IDs)
   const [selectedHumans, setSelectedHumans] = useState<string[]>(["t2", "t3"]); // Lucas, Emma by default
@@ -41,7 +41,7 @@ export function BrainstormRoom({ agents, onClose, onPlanTasks }: BrainstormRoomP
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, activeSpeaker]);
 
-  const client = mockClients.find(c => c.id === clientId)!;
+  const client = (mockClients.find(c => c.id === clientId) || mockClients[0]) as any;
 
   // Selected deliverable for preview modal
   const [selectedPreview, setSelectedPreview] = useState<any | null>(null);

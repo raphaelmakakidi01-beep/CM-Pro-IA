@@ -7,11 +7,11 @@ import { InstagramIcon, FacebookIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } f
 
 const allPosts = [
   ...mockTodayPosts,
-  { id: "px1", client: "TechNova",      clientLogo: "TN", clientColor: "#2563EB", network: "twitter",   format: "Thread",    time: "2026-07-11 08:00", status: "scheduled", caption: "Veille technologique : Top 5 tendances IA de la semaine" },
-  { id: "px2", client: "Immo Prestige", clientLogo: "IP", clientColor: "#10B981", network: "linkedin",  format: "Carrousel", time: "2026-07-11 09:00", status: "draft",      caption: "Bien de prestige du mois : Villa 5 pièces vue mer" },
-  { id: "px3", client: "Flore & Co",    clientLogo: "FC", clientColor: "#7C3AED", network: "instagram", format: "Carrousel", time: "2026-07-12 10:00", status: "scheduled", caption: "Lookbook été — 7 looks à adopter cette saison" },
-  { id: "px4", client: "BioNature",     clientLogo: "BN", clientColor: "#84CC16", network: "instagram", format: "Reel",      time: "2026-07-12 09:00", status: "scheduled", caption: "Routine soin matinal en 5 étapes simples" },
-  { id: "px5", client: "Évasion Travel",clientLogo: "ET", clientColor: "#0EA5E9", network: "facebook",  format: "Image",     time: "2026-07-12 11:00", status: "draft",      caption: "Offre exclusive été : -15% sur vos voyages Maldives" },
+  { id: "px1", client: "Client Technologie", clientLogo: "CT", clientColor: "#2563EB", network: "twitter",   format: "Thread",    time: "2026-07-11 08:00", status: "scheduled", caption: "Veille technologique : Top 5 tendances IA de la semaine" },
+  { id: "px2", client: "Client Immobilier",  clientLogo: "CI", clientColor: "#10B981", network: "linkedin",  format: "Carrousel", time: "2026-07-11 09:00", status: "draft",      caption: "Présentation immobilière : Villa vue mer" },
+  { id: "px3", client: "Client E-commerce",  clientLogo: "CE", clientColor: "#7C3AED", network: "instagram", format: "Carrousel", time: "2026-07-12 10:00", status: "scheduled", caption: "Lookbook été — 7 looks à adopter cette saison" },
+  { id: "px4", client: "Client Cosmétiques", clientLogo: "CC", clientColor: "#84CC16", network: "instagram", format: "Reel",      time: "2026-07-12 09:00", status: "scheduled", caption: "Routine soin matinal en 5 étapes simples" },
+  { id: "px5", client: "Client Tourisme",    clientLogo: "CT", clientColor: "#0EA5E9", network: "facebook",  format: "Image",     time: "2026-07-12 11:00", status: "draft",      caption: "Offre exclusive été : -15% sur vos voyages" },
 ];
 
 const networkIconMap: Record<string, React.ReactNode> = {

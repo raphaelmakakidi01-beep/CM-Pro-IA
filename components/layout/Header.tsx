@@ -190,9 +190,9 @@ export function Header() {
               <button onClick={() => setNotifOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "var(--text-muted)" }}><X size={14} /></button>
             </div>
             {[
-              { title: "Post publié avec succès", desc: "Maison Blanc — Instagram", time: "Il y a 12 min", dot: "#10B981" },
-              { title: "Alerte engagement", desc: "Vitality Sport en baisse de 12%", time: "Il y a 2h", dot: "#F59E0B" },
-              { title: "Rapport prêt", desc: "BioNature — Juin 2026", time: "Il y a 4h", dot: "#2563EB" },
+              { title: "Post publié avec succès", desc: "Client Restauration — Instagram", time: "Il y a 12 min", dot: "#10B981" },
+              { title: "Alerte engagement", desc: "Client Sport & Santé en baisse de 12%", time: "Il y a 2h", dot: "#F59E0B" },
+              { title: "Rapport prêt", desc: "Client Cosmétiques — Juin 2026", time: "Il y a 4h", dot: "#2563EB" },
             ].map((n, i) => (
               <div key={i} style={{ padding: "12px 16px", display: "flex", gap: 10, borderBottom: i < 2 ? "1px solid var(--border)" : "none", cursor: "pointer" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--bg-subtle)"; }}

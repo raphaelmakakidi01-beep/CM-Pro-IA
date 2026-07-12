@@ -25,17 +25,17 @@ const metricCards = [
 ];
 
 const topPosts = [
-  { client: "Flore & Co", content: "Lookbook été 2026", network: "Instagram", reach: 41200, engagement: 8.4, format: "Carrousel" },
-  { client: "BioNature", content: "Routine soin matinal", network: "TikTok", reach: 38700, engagement: 7.2, format: "Reel" },
-  { client: "Maison Blanc", content: "Chef en coulisses", network: "TikTok", reach: 35400, engagement: 6.9, format: "Vidéo" },
-  { client: "Évasion Travel", content: "Maldives 2026", network: "Instagram", reach: 32100, engagement: 6.1, format: "Reel" },
-  { client: "TechNova", content: "IA & relation client", network: "LinkedIn", reach: 28500, engagement: 5.7, format: "Article" },
+  { client: "Client E-commerce", content: "Lookbook été 2026", network: "Instagram", reach: 41200, engagement: 8.4, format: "Carrousel" },
+  { client: "Client Cosmétiques", content: "Routine soin matinal", network: "TikTok", reach: 38700, engagement: 7.2, format: "Reel" },
+  { client: "Client Restauration", content: "Chef en coulisses", network: "TikTok", reach: 35400, engagement: 6.9, format: "Vidéo" },
+  { client: "Client Tourisme", content: "Maldives 2026", network: "Instagram", reach: 32100, engagement: 6.1, format: "Reel" },
+  { client: "Client Technologie", content: "IA & relation client", network: "LinkedIn", reach: 28500, engagement: 5.7, format: "Article" },
 ];
 
 const aiRecos = [
   { title: "Publiez des Reels", message: "Les Reels génèrent en moyenne 3.2x plus d'engagement que les posts statiques sur Instagram pour vos clients." },
   { title: "Meilleur horaire : Mardi 9h", message: "Vos publications LinkedIn du mardi matin obtiennent 68% de portée supplémentaire." },
-  { title: "Augmentez les carrousels", message: "Les carrousels sur Instagram ont un taux de sauvegarde 4x supérieur aux autres formats pour Flore & Co." },
+  { title: "Augmentez les carrousels", message: "Les carrousels sur Instagram ont un taux de sauvegarde 4x supérieur aux autres formats pour le Client E-commerce." },
 ];
 
 export default function AnalyticsPage() {

@@ -51,7 +51,7 @@ export default function ParametresPage() {
   ]);
 
   const [apiKeys, setApiKeys] = useState<Record<string, string>>({
-    openai: "sk-proj-saved_key_12345",
+    openai: "",
     anthropic: "",
     gemini: ""
   });

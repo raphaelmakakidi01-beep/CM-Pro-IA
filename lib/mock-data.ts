@@ -1,18 +1,18 @@
 export const mockUser = {
   id: "u1",
-  name: "Sophie Martin",
-  email: "sophie@agence-cm.fr",
-  avatar: "SM",
-  role: "Community Manager Senior",
+  name: "Administrateur",
+  email: "admin@agence-cm.fr",
+  avatar: "AD",
+  role: "Community Manager Principal",
   plan: "Pro",
 };
 
 export const mockClients = [
   {
     id: "c1",
-    name: "Maison Blanc",
+    name: "Client Restauration",
     sector: "Restauration",
-    logo: "MB",
+    logo: "CR",
     logoColor: "#F59E0B",
     status: "active",
     networks: ["instagram", "facebook", "tiktok"],
@@ -22,7 +22,7 @@ export const mockClients = [
     engagement: 4.2,
     monthlyBudget: 1200,
     nextPost: "2026-07-10T14:00:00",
-    description: "Restaurant gastronomique parisien, cuisine française contemporaine.",
+    description: "Fiche client - Espace de restauration gastronomique.",
     postsInstagram: 8,
     postsLinkedin: 8,
     monthlyPostTarget: 16,
@@ -32,9 +32,9 @@ export const mockClients = [
   },
   {
     id: "c2",
-    name: "TechNova",
+    name: "Client Technologie",
     sector: "Technologie",
-    logo: "TN",
+    logo: "CT",
     logoColor: "#2563EB",
     status: "active",
     networks: ["linkedin", "twitter", "instagram"],
@@ -44,7 +44,7 @@ export const mockClients = [
     engagement: 3.8,
     monthlyBudget: 2500,
     nextPost: "2026-07-10T16:30:00",
-    description: "Startup SaaS spécialisée en intelligence artificielle B2B.",
+    description: "Fiche client - Société de développement de logiciels et services B2B.",
     postsInstagram: 10,
     postsLinkedin: 10,
     monthlyPostTarget: 20,
@@ -54,9 +54,9 @@ export const mockClients = [
   },
   {
     id: "c3",
-    name: "Flore & Co",
+    name: "Client E-commerce",
     sector: "E-commerce Mode",
-    logo: "FC",
+    logo: "CE",
     logoColor: "#7C3AED",
     status: "active",
     networks: ["instagram", "pinterest", "tiktok"],
@@ -66,19 +66,19 @@ export const mockClients = [
     engagement: 6.1,
     monthlyBudget: 1800,
     nextPost: "2026-07-10T11:00:00",
-    description: "Marque de mode éco-responsable, collections capsules.",
+    description: "Fiche client - Boutique e-commerce d'habillement et accessoires.",
     postsInstagram: 8,
     postsLinkedin: 4,
     monthlyPostTarget: 12,
-    postsDelivered: 2, // Lagging: 2/12 = 16% (elapsed is 36%)
+    postsDelivered: 2,
     primaryKpiGoal: "reach",
     growthTarget: "Gagner 5k abonnés"
   },
   {
     id: "c4",
-    name: "Immo Prestige",
+    name: "Client Immobilier",
     sector: "Immobilier",
-    logo: "IP",
+    logo: "CI",
     logoColor: "#10B981",
     status: "active",
     networks: ["linkedin", "facebook", "instagram"],
@@ -88,7 +88,7 @@ export const mockClients = [
     engagement: 2.9,
     monthlyBudget: 3000,
     nextPost: "2026-07-11T09:00:00",
-    description: "Agence immobilière haut de gamme, Paris & Côte d'Azur.",
+    description: "Fiche client - Agence de conseil et courtage en immobilier.",
     postsInstagram: 4,
     postsLinkedin: 4,
     monthlyPostTarget: 8,
@@ -98,9 +98,9 @@ export const mockClients = [
   },
   {
     id: "c5",
-    name: "Vitality Sport",
+    name: "Client Sport & Santé",
     sector: "Sport & Santé",
-    logo: "VS",
+    logo: "CS",
     logoColor: "#EF4444",
     status: "paused",
     networks: ["instagram", "youtube", "tiktok"],
@@ -110,19 +110,19 @@ export const mockClients = [
     engagement: 5.4,
     monthlyBudget: 900,
     nextPost: "2026-07-12T08:00:00",
-    description: "Équipements sportifs et coaching en ligne.",
+    description: "Fiche client - Organisme de coaching sportif et bien-être.",
     postsInstagram: 8,
     postsLinkedin: 4,
     monthlyPostTarget: 12,
-    postsDelivered: 1, // Lagging: 1/12 = 8% (elapsed is 36%)
+    postsDelivered: 1,
     primaryKpiGoal: "engagement",
     growthTarget: "+15% engagement"
   },
   {
     id: "c6",
-    name: "Évasion Travel",
+    name: "Client Tourisme",
     sector: "Tourisme",
-    logo: "ET",
+    logo: "CT",
     logoColor: "#0EA5E9",
     status: "active",
     networks: ["instagram", "facebook", "youtube"],
@@ -132,7 +132,7 @@ export const mockClients = [
     engagement: 4.8,
     monthlyBudget: 1500,
     nextPost: "2026-07-10T18:00:00",
-    description: "Agence de voyages sur mesure, destinations premium.",
+    description: "Fiche client - Agence de voyages et séjours de loisirs.",
     postsInstagram: 10,
     postsLinkedin: 5,
     monthlyPostTarget: 15,
@@ -142,9 +142,9 @@ export const mockClients = [
   },
   {
     id: "c7",
-    name: "BioNature",
+    name: "Client Cosmétiques",
     sector: "Santé & Bien-être",
-    logo: "BN",
+    logo: "CC",
     logoColor: "#84CC16",
     status: "active",
     networks: ["instagram", "facebook", "pinterest"],
@@ -154,7 +154,7 @@ export const mockClients = [
     engagement: 5.9,
     monthlyBudget: 1100,
     nextPost: "2026-07-10T12:00:00",
-    description: "Cosmétiques naturels et soins bio certifiés.",
+    description: "Fiche client - Marque de produits cosmétiques naturels.",
     postsInstagram: 8,
     postsLinkedin: 8,
     monthlyPostTarget: 16,
@@ -164,9 +164,9 @@ export const mockClients = [
   },
   {
     id: "c8",
-    name: "FinEdge",
+    name: "Client Finance",
     sector: "Finance",
-    logo: "FE",
+    logo: "CF",
     logoColor: "#6366F1",
     status: "review",
     networks: ["linkedin", "twitter"],
@@ -176,11 +176,11 @@ export const mockClients = [
     engagement: 2.1,
     monthlyBudget: 4000,
     nextPost: "2026-07-11T10:00:00",
-    description: "Conseil en gestion de patrimoine et investissements.",
+    description: "Fiche client - Société de conseil en gestion et investissements.",
     postsInstagram: 0,
     postsLinkedin: 10,
     monthlyPostTarget: 10,
-    postsDelivered: 3, // Lagging: 3/10 = 30% (elapsed is 36%)
+    postsDelivered: 3,
     primaryKpiGoal: "employer_branding",
     growthTarget: "+5% engagement"
   },
@@ -233,31 +233,31 @@ export const mockEngagementData = [
 ];
 
 export const mockActivities = [
-  { id: "a1", type: "publish", client: "Maison Blanc", content: "Post Instagram publié avec succès", time: "Il y a 12 min", network: "instagram", icon: "check" },
-  { id: "a2", type: "schedule", client: "TechNova", content: "3 posts programmés pour la semaine", time: "Il y a 45 min", network: "linkedin", icon: "calendar" },
-  { id: "a3", type: "ai", client: "Flore & Co", content: "Calendrier éditorial généré par IA", time: "Il y a 1h", network: "instagram", icon: "sparkles" },
-  { id: "a4", type: "alert", client: "Vitality Sport", content: "Taux d'engagement en baisse (-12%)", time: "Il y a 2h", network: "tiktok", icon: "warning" },
-  { id: "a5", type: "publish", client: "Évasion Travel", content: "Story Facebook publiée", time: "Il y a 3h", network: "facebook", icon: "check" },
-  { id: "a6", type: "report", client: "BioNature", content: "Rapport mensuel juin généré", time: "Il y a 4h", network: "", icon: "file" },
-  { id: "a7", type: "schedule", client: "Immo Prestige", content: "Carrousel LinkedIn programmé", time: "Il y a 5h", network: "linkedin", icon: "calendar" },
+  { id: "a1", type: "publish", client: "Client Restauration", content: "Post Instagram publié avec succès", time: "Il y a 12 min", network: "instagram", icon: "check" },
+  { id: "a2", type: "schedule", client: "Client Technologie", content: "3 posts programmés pour la semaine", time: "Il y a 45 min", network: "linkedin", icon: "calendar" },
+  { id: "a3", type: "ai", client: "Client E-commerce", content: "Calendrier éditorial généré par IA", time: "Il y a 1h", network: "instagram", icon: "sparkles" },
+  { id: "a4", type: "alert", client: "Client Sport & Santé", content: "Taux d'engagement en baisse (-12%)", time: "Il y a 2h", network: "tiktok", icon: "warning" },
+  { id: "a5", type: "publish", client: "Client Tourisme", content: "Story Facebook publiée", time: "Il y a 3h", network: "facebook", icon: "check" },
+  { id: "a6", type: "report", client: "Client Cosmétiques", content: "Rapport mensuel juin généré", time: "Il y a 4h", network: "", icon: "file" },
+  { id: "a7", type: "schedule", client: "Client Immobilier", content: "Carrousel LinkedIn programmé", time: "Il y a 5h", network: "linkedin", icon: "calendar" },
 ];
 
 export const mockTodayPosts = [
-  { id: "p1", client: "Maison Blanc", clientLogo: "MB", clientColor: "#F59E0B", network: "instagram", format: "Carrousel", time: "14:00", status: "scheduled", caption: "Notre menu estival vous attend ! Réservez votre table..." },
-  { id: "p2", client: "BioNature", clientLogo: "BN", clientColor: "#84CC16", network: "facebook", format: "Image", time: "12:00", status: "published", caption: "Découvrez notre nouvelle gamme de soins bio..." },
-  { id: "p3", client: "TechNova", clientLogo: "TN", clientColor: "#2563EB", network: "linkedin", format: "Article", time: "16:30", status: "scheduled", caption: "Comment l'IA transforme la relation client en 2026..." },
-  { id: "p4", client: "Évasion Travel", clientLogo: "ET", clientColor: "#0EA5E9", network: "instagram", format: "Reel", time: "18:00", status: "scheduled", caption: "Destination Maldives : le voyage dont vous rêvez..." },
-  { id: "p5", client: "Flore & Co", clientLogo: "FC", clientColor: "#7C3AED", network: "tiktok", format: "Vidéo", time: "11:00", status: "published", caption: "Nouvelle collection été - En coulisses..." },
+  { id: "p1", client: "Client Restauration", clientLogo: "CR", clientColor: "#F59E0B", network: "instagram", format: "Carrousel", time: "14:00", status: "scheduled", caption: "Notre menu estival vous attend ! Réservez votre table..." },
+  { id: "p2", client: "Client Cosmétiques", clientLogo: "CC", clientColor: "#84CC16", network: "facebook", format: "Image", time: "12:00", status: "published", caption: "Découvrez notre nouvelle gamme de soins bio..." },
+  { id: "p3", client: "Client Technologie", clientLogo: "CT", clientColor: "#2563EB", network: "linkedin", format: "Article", time: "16:30", status: "scheduled", caption: "Comment l'IA transforme la relation client en 2026..." },
+  { id: "p4", client: "Client Tourisme", clientLogo: "CT", clientColor: "#0EA5E9", network: "instagram", format: "Reel", time: "18:00", status: "scheduled", caption: "Destination voyages : le voyage dont vous rêvez..." },
+  { id: "p5", client: "Client E-commerce", clientLogo: "CE", clientColor: "#7C3AED", network: "tiktok", format: "Vidéo", time: "11:00", status: "published", caption: "Nouvelle collection été - En coulisses..." },
 ];
 
 export const mockAIAlerts = [
-  { id: "al1", type: "opportunity", title: "Tendance détectée", message: "Le hashtag #RecettesÉté est en forte hausse. Idéal pour Maison Blanc ce weekend.", priority: "high", client: "Maison Blanc" },
-  { id: "al2", type: "warning", title: "Engagement en baisse", message: "Vitality Sport a perdu 12% d'engagement cette semaine. Recommandation : publier des Reels courts.", priority: "medium", client: "Vitality Sport" },
-  { id: "al3", type: "suggestion", title: "Meilleur moment", message: "Pour TechNova, les posts LinkedIn le mardi à 8h génèrent 3x plus d'impressions.", priority: "low", client: "TechNova" },
+  { id: "al1", type: "opportunity", title: "Tendance détectée", message: "Le hashtag #RecettesÉté est en forte hausse. Idéal pour Client Restauration ce weekend.", priority: "high", client: "Client Restauration" },
+  { id: "al2", type: "warning", title: "Engagement en baisse", message: "Client Sport & Santé a perdu 12% d'engagement cette semaine. Recommandation : publier des Reels courts.", priority: "medium", client: "Client Sport & Santé" },
+  { id: "al3", type: "suggestion", title: "Meilleur moment", message: "Pour Client Technologie, les posts LinkedIn le mardi à 8h génèrent 3x plus d'impressions.", priority: "low", client: "Client Technologie" },
 ];
 
 export const mockTeamMembers = [
-  { id: "t1", name: "Sophie Martin", role: "Community Manager Senior", avatar: "SM", email: "sophie@agence-cm.fr", clients: 4, status: "online" },
+  { id: "t1", name: "Administrateur", role: "Community Manager Principal", avatar: "AD", email: "admin@agence-cm.fr", clients: 4, status: "online" },
   { id: "t2", name: "Lucas Bernard", role: "Content Creator", avatar: "LB", email: "lucas@agence-cm.fr", clients: 3, status: "online" },
   { id: "t3", name: "Emma Rousseau", role: "Social Media Manager", avatar: "ER", email: "emma@agence-cm.fr", clients: 2, status: "away" },
   { id: "t4", name: "Thomas Petit", role: "Graphic Designer", avatar: "TP", email: "thomas@agence-cm.fr", clients: 0, status: "offline" },
@@ -265,37 +265,37 @@ export const mockTeamMembers = [
 ];
 
 export const mockInvoices = [
-  { id: "inv1", client: "TechNova", amount: 2500, status: "paid", date: "2026-07-01", dueDate: "2026-07-15" },
-  { id: "inv2", client: "Immo Prestige", amount: 3000, status: "pending", date: "2026-07-05", dueDate: "2026-07-20" },
-  { id: "inv3", client: "Maison Blanc", amount: 1200, status: "pending", date: "2026-07-05", dueDate: "2026-07-20" },
-  { id: "inv4", client: "Flore & Co", amount: 1800, status: "overdue", date: "2026-06-01", dueDate: "2026-06-15" },
-  { id: "inv5", client: "Évasion Travel", amount: 1500, status: "paid", date: "2026-06-01", dueDate: "2026-06-15" },
-  { id: "inv6", client: "BioNature", amount: 1100, status: "paid", date: "2026-06-01", dueDate: "2026-06-15" },
+  { id: "inv1", client: "Client Technologie", amount: 2500, status: "paid", date: "2026-07-01", dueDate: "2026-07-15" },
+  { id: "inv2", client: "Client Immobilier", amount: 3000, status: "pending", date: "2026-07-05", dueDate: "2026-07-20" },
+  { id: "inv3", client: "Client Restauration", amount: 1200, status: "pending", date: "2026-07-05", dueDate: "2026-07-20" },
+  { id: "inv4", client: "Client E-commerce", amount: 1800, status: "overdue", date: "2026-06-01", dueDate: "2026-06-15" },
+  { id: "inv5", client: "Client Tourisme", amount: 1500, status: "paid", date: "2026-06-01", dueDate: "2026-06-15" },
+  { id: "inv6", client: "Client Cosmétiques", amount: 1100, status: "paid", date: "2026-06-01", dueDate: "2026-06-15" },
 ];
 
 export const mockCalendarEvents = [
-  { id: "e1", clientId: "c1", client: "Maison Blanc", network: "instagram", format: "Carrousel", title: "Menu été", date: "2026-07-10", time: "14:00", status: "scheduled", color: "#F59E0B" },
-  { id: "e2", clientId: "c7", client: "BioNature", network: "facebook", format: "Image", title: "Gamme soins", date: "2026-07-10", time: "12:00", status: "published", color: "#84CC16" },
-  { id: "e3", clientId: "c2", client: "TechNova", network: "linkedin", format: "Article", title: "IA & relation client", date: "2026-07-10", time: "16:30", status: "scheduled", color: "#2563EB" },
-  { id: "e4", clientId: "c6", client: "Évasion Travel", network: "instagram", format: "Reel", title: "Maldives 2026", date: "2026-07-10", time: "18:00", status: "scheduled", color: "#0EA5E9" },
-  { id: "e5", clientId: "c3", client: "Flore & Co", network: "tiktok", format: "Vidéo", title: "Coulisses collection", date: "2026-07-10", time: "11:00", status: "published", color: "#7C3AED" },
-  { id: "e6", clientId: "c1", client: "Maison Blanc", network: "instagram", format: "Story", title: "Ambiance restaurant", date: "2026-07-11", time: "12:00", status: "scheduled", color: "#F59E0B" },
-  { id: "e7", clientId: "c4", client: "Immo Prestige", network: "linkedin", format: "Carrousel", title: "Bien du mois", date: "2026-07-11", time: "09:00", status: "draft", color: "#10B981" },
-  { id: "e8", clientId: "c2", client: "TechNova", network: "twitter", format: "Thread", title: "Veille tech", date: "2026-07-11", time: "08:00", status: "scheduled", color: "#2563EB" },
-  { id: "e9", clientId: "c3", client: "Flore & Co", network: "instagram", format: "Carrousel", title: "Lookbook été", date: "2026-07-12", time: "10:00", status: "scheduled", color: "#7C3AED" },
-  { id: "e10", clientId: "c6", client: "Évasion Travel", network: "facebook", format: "Image", title: "Promo été -15%", date: "2026-07-12", time: "11:00", status: "draft", color: "#0EA5E9" },
-  { id: "e11", clientId: "c7", client: "BioNature", network: "instagram", format: "Reel", title: "Routine soin matinal", date: "2026-07-12", time: "09:00", status: "scheduled", color: "#84CC16" },
-  { id: "e12", clientId: "c1", client: "Maison Blanc", network: "tiktok", format: "Vidéo", title: "Chef en cuisine", date: "2026-07-13", time: "18:00", status: "scheduled", color: "#F59E0B" },
-  { id: "e13", clientId: "c2", client: "TechNova", network: "linkedin", format: "Article", title: "Cas client réussi", date: "2026-07-14", time: "09:00", status: "draft", color: "#2563EB" },
-  { id: "e14", clientId: "c4", client: "Immo Prestige", network: "facebook", format: "Image", title: "Villa Côte d'Azur", date: "2026-07-14", time: "14:00", status: "scheduled", color: "#10B981" },
-  { id: "e15", clientId: "c3", client: "Flore & Co", network: "pinterest", format: "Image", title: "Moodboard automne", date: "2026-07-15", time: "10:00", status: "draft", color: "#7C3AED" },
+  { id: "e1", clientId: "c1", client: "Client Restauration", network: "instagram", format: "Carrousel", title: "Menu été", date: "2026-07-10", time: "14:00", status: "scheduled", color: "#F59E0B" },
+  { id: "e2", clientId: "c7", client: "Client Cosmétiques", network: "facebook", format: "Image", title: "Gamme soins", date: "2026-07-10", time: "12:00", status: "published", color: "#84CC16" },
+  { id: "e3", clientId: "c2", client: "Client Technologie", network: "linkedin", format: "Article", title: "IA & relation client", date: "2026-07-10", time: "16:30", status: "scheduled", color: "#2563EB" },
+  { id: "e4", clientId: "c6", client: "Client Tourisme", network: "instagram", format: "Reel", title: "Routine voyages", date: "2026-07-10", time: "18:00", status: "scheduled", color: "#0EA5E9" },
+  { id: "e5", clientId: "c3", client: "Client E-commerce", network: "tiktok", format: "Vidéo", title: "Coulisses collection", date: "2026-07-10", time: "11:00", status: "published", color: "#7C3AED" },
+  { id: "e6", clientId: "c1", client: "Client Restauration", network: "instagram", format: "Story", title: "Ambiance restaurant", date: "2026-07-11", time: "12:00", status: "scheduled", color: "#F59E0B" },
+  { id: "e7", clientId: "c4", client: "Client Immobilier", network: "linkedin", format: "Carrousel", title: "Bien du mois", date: "2026-07-11", time: "09:00", status: "draft", color: "#10B981" },
+  { id: "e8", clientId: "c2", client: "Client Technologie", network: "twitter", format: "Thread", title: "Veille tech", date: "2026-07-11", time: "08:00", status: "scheduled", color: "#2563EB" },
+  { id: "e9", clientId: "c3", client: "Client E-commerce", network: "instagram", format: "Carrousel", title: "Lookbook été", date: "2026-07-12", time: "10:00", status: "scheduled", color: "#7C3AED" },
+  { id: "e10", clientId: "c6", client: "Client Tourisme", network: "facebook", format: "Image", title: "Promo été -15%", date: "2026-07-12", time: "11:00", status: "draft", color: "#0EA5E9" },
+  { id: "e11", clientId: "c7", client: "Client Cosmétiques", network: "instagram", format: "Reel", title: "Routine soin matinal", date: "2026-07-12", time: "09:00", status: "scheduled", color: "#84CC16" },
+  { id: "e12", clientId: "c1", client: "Client Restauration", network: "tiktok", format: "Vidéo", title: "Chef en cuisine", date: "2026-07-13", time: "18:00", status: "scheduled", color: "#F59E0B" },
+  { id: "e13", clientId: "c2", client: "Client Technologie", network: "linkedin", format: "Article", title: "Cas client réussi", date: "2026-07-14", time: "09:00", status: "draft", color: "#2563EB" },
+  { id: "e14", clientId: "c4", client: "Client Immobilier", network: "facebook", format: "Image", title: "Présentation de biens", date: "2026-07-14", time: "14:00", status: "scheduled", color: "#10B981" },
+  { id: "e15", clientId: "c3", client: "Client E-commerce", network: "pinterest", format: "Image", title: "Moodboard automne", date: "2026-07-15", time: "10:00", status: "draft", color: "#7C3AED" },
 ];
 
 export const mockMessages = [
-  { id: "m1", from: "Lucas Bernard", fromAvatar: "LB", content: "J'ai terminé les visuels pour Maison Blanc, ils sont dans la bibliothèque.", time: "10:32", unread: true },
-  { id: "m2", from: "Emma Rousseau", fromAvatar: "ER", content: "Le rapport mensuel de Flore & Co est prêt à valider.", time: "09:15", unread: true },
-  { id: "m3", from: "Thomas Petit", fromAvatar: "TP", content: "Besoin de la charte graphique pour TechNova en HD.", time: "Hier", unread: false },
-  { id: "m4", from: "Camille Durand", fromAvatar: "CD", content: "Les stats du mois de juin sont excellentes pour BioNature !", time: "Hier", unread: false },
+  { id: "m1", from: "Lucas Bernard", fromAvatar: "LB", content: "J'ai terminé les visuels pour le Client Restauration, ils sont dans la bibliothèque.", time: "10:32", unread: true },
+  { id: "m2", from: "Emma Rousseau", fromAvatar: "ER", content: "Le rapport mensuel du Client E-commerce est prêt à valider.", time: "09:15", unread: true },
+  { id: "m3", from: "Thomas Petit", fromAvatar: "TP", content: "Besoin de la charte graphique du Client Technologie en HD.", time: "Hier", unread: false },
+  { id: "m4", from: "Camille Durand", fromAvatar: "CD", content: "Les stats du mois de juin sont excellentes pour le Client Cosmétiques !", time: "Hier", unread: false },
 ];
 
 export const networkColors: Record<string, string> = {
@@ -348,86 +348,69 @@ export const mockAIAgents: AIAgent[] = [
     name: "Alex",
     role: "Copywriter LinkedIn",
     specialty: "Rédaction B2B, LinkedIn Thought Leadership, Threads",
-    avatar: "AX",
-    avatarGradient: "linear-gradient(135deg, #2563EB, #1D4ED8)",
-    status: "standby", // Untested key -> put in standby
+    avatar: "AL",
+    avatarGradient: "linear-gradient(135deg, #2563EB, #3B82F6)",
+    status: "active",
     provider: "openai",
-    model: "GPT-4o",
-    systemPrompt: "Tu es un expert en personal branding B2B sur LinkedIn. Tu rédiges des posts percutants, analytiques et inspirants pour des dirigeants et startups tech. Ton ton est direct, sans jargon creux, avec des données concrètes et des appels à l'action subtils. Tu évites les posts génériques et les listes à puces mécaniques.",
-    temperature: 0.65,
-    hasCustomKey: true,
+    model: "gpt-4o",
+    systemPrompt: "Tu es un expert LinkedIn. Rédige des accroches percutantes et des posts optimisés pour le réseau.",
+    temperature: 0.7,
+    hasCustomKey: false,
     keyStatus: "untested",
-    tasksCompleted: 142,
-    knowledgeDocs: ["Guide LinkedIn 2026.pdf", "Tonalités client TechNova.pdf"],
+    tasksCompleted: 34,
+    knowledgeDocs: ["Ligne_Editoriale_Generale.pdf"]
   },
   {
     id: "ai2",
-    name: "Maya",
-    role: "Créatrice Contenu Instagram",
-    specialty: "Visuels Instagram, Reels, Storytelling de marque, Mode & Lifestyle",
-    avatar: "MY",
-    avatarGradient: "linear-gradient(135deg, #EC4899, #A855F7)",
-    status: "standby", // Out of credits -> put in standby
-    provider: "gemini",
-    model: "Gemini 1.5 Pro",
-    systemPrompt: "Tu es une directrice artistique et copywriter spécialisée en contenu Instagram pour des marques lifestyle et mode. Tu crées des légendes poétiques, des accroches émotionnelles et des scripts de Reels courts (max 30s). Ton esthétique est minimaliste, ton champ lexical évocateur, tu sais amplifier le désir d'achat sans paraître commercial.",
-    temperature: 0.82,
+    name: "Iris",
+    role: "Visual Designer",
+    specialty: "Création de Prompts Image (Midjourney/DALL-E), Direction Artistique",
+    avatar: "IR",
+    avatarGradient: "linear-gradient(135deg, #EC4899, #F472B6)",
+    status: "standby",
+    provider: "openai",
+    model: "gpt-4o",
+    systemPrompt: "Tu es un directeur artistique. Rédige des prompts de génération d'images ultra-précis.",
+    temperature: 0.8,
     hasCustomKey: false,
-    keyStatus: "no_credits",
-    tasksCompleted: 89,
-    knowledgeDocs: ["Charte visuelle Flore & Co.pdf"],
+    keyStatus: "untested",
+    tasksCompleted: 48,
+    knowledgeDocs: ["Styles_Visuels_De_Marque.pdf"]
   },
   {
     id: "ai3",
     name: "Sam",
-    role: "Analyste Performance",
-    specialty: "Data Analysis, Rapports d'engagement, Recommandations stratégiques",
-    avatar: "SM",
-    avatarGradient: "linear-gradient(135deg, #0EA5E9, #0284C7)",
-    status: "working", // Valid key -> currently running task
-    provider: "anthropic",
-    model: "Claude 3.5 Sonnet",
-    systemPrompt: "Tu es un analyste data senior spécialisé en social media analytics. Tu interprètes les métriques d'engagement (taux, reach, conversions) et produis des rapports structurés avec des insights actionnables. Tu expliques les tendances simplement, tu identifies les contenus sur- et sous-performants, et tu formules des recommandations chiffrées et priorisées.",
-    temperature: 0.2,
-    hasCustomKey: true,
-    keyStatus: "valid",
-    tasksCompleted: 67,
-    knowledgeDocs: ["Benchmarks sectoriels 2026.pdf", "Guide Google Analytics 4.pdf"],
+    role: "SEO Specialist",
+    specialty: "Recherche de Hashtags, SEO Local, Optimisation de Profils",
+    avatar: "SA",
+    avatarGradient: "linear-gradient(135deg, #10B981, #34D399)",
+    status: "active",
+    provider: "gemini",
+    model: "gemini-1.5-pro",
+    systemPrompt: "Tu es un spécialiste SEO et réseaux sociaux. Analyse et sélectionne les meilleurs hashtags.",
+    temperature: 0.5,
+    hasCustomKey: false,
+    keyStatus: "untested",
+    tasksCompleted: 21,
+    knowledgeDocs: ["Guide_SEO_Mots_Cles.pdf"]
   },
   {
     id: "ai4",
-    name: "Leo",
-    role: "Rédacteur SEO & Blog",
-    specialty: "Articles de blog longs, SEO, Newsletters, Contenu éditorial",
-    avatar: "LO",
-    avatarGradient: "linear-gradient(135deg, #10B981, #059669)",
-    status: "active", // Valid key/fallback credits -> ready/active
-    provider: "mistral",
-    model: "Mistral Large",
-    systemPrompt: "Tu es un rédacteur web expert en SEO et en content marketing. Tu produis des articles de blog longs (800–2500 mots), des newsletters engageantes et des pages de destination optimisées pour le référencement naturel. Tu intègres naturellement les mots-clés cibles, tu structures les contenus avec un maillage interne logique et tu adaptes le registre au secteur du client.",
-    temperature: 0.45,
+    name: "Maya",
+    role: "Instagram Specialist",
+    specialty: "Scripts de Reels, Rédaction de Légendes Fun & Engageantes",
+    avatar: "MA",
+    avatarGradient: "linear-gradient(135deg, #7C3AED, #A78BFA)",
+    status: "working",
+    provider: "anthropic",
+    model: "claude-3-5-sonnet",
+    systemPrompt: "Tu es experte de l'algorithme Instagram. Conçois des scripts de Reels hautement engageants.",
+    temperature: 0.75,
     hasCustomKey: false,
-    keyStatus: "valid",
-    tasksCompleted: 34,
-    knowledgeDocs: ["Stratégie SEO BioNature.pdf"],
-  },
-  {
-    id: "ai5",
-    name: "Iris",
-    role: "Designer & Prompt Images",
-    specialty: "Génération de prompts visuels, Direction artistique, Midjourney & DALL-E",
-    avatar: "IR",
-    avatarGradient: "linear-gradient(135deg, #F59E0B, #D97706)",
-    status: "standby", // Expired key -> put in standby
-    provider: "openai",
-    model: "GPT-4o",
-    systemPrompt: "Tu es une directrice artistique IA spécialisée dans la création de prompts visuels pour les outils génératifs (Midjourney, DALL-E, Firefly). Tu traduis des briefs marketing en descriptions visuelles précises, en tenant compte du style, de la lumière, de la composition, de la palette et du format de sortie attendu. Chaque prompt que tu génères est structuré, testable et optimisé pour le rendu final.",
-    temperature: 0.78,
-    hasCustomKey: true,
-    keyStatus: "expired",
-    tasksCompleted: 211,
-    knowledgeDocs: ["Moodboard Maison Blanc.pdf", "Guide DALL-E 3.pdf"],
-  },
+    keyStatus: "untested",
+    tasksCompleted: 15,
+    knowledgeDocs: ["Instagram_Best_Practices_2026.pdf"]
+  }
 ];
 
 export const networkLabels: Record<string, string> = {
@@ -435,34 +418,22 @@ export const networkLabels: Record<string, string> = {
   facebook: "Facebook",
   linkedin: "LinkedIn",
   tiktok: "TikTok",
-  twitter: "Twitter / X",
+  twitter: "Twitter",
   youtube: "YouTube",
   pinterest: "Pinterest",
   threads: "Threads",
 };
 
-// ── Hybrid Brainstorming types ──────────────────────────────────────────────
-
 export interface MeetingMessage {
   id: string;
-  senderId: string; // "user", memberId (t1, t2...) or agentId (ai1, ai2...)
+  senderId: string;
   senderName: string;
   senderAvatar: string;
+  senderGradient?: string;
   avatarGradient?: string;
-  role: string;
   content: string;
   time: string;
-  type: "user" | "human" | "ai";
+  isAI?: boolean;
+  role?: string;
+  type?: string;
 }
-
-export interface BrainstormMeeting {
-  id: string;
-  title: string;
-  clientName: string;
-  brief: string;
-  participants: string[]; // List of IDs (either aiX or tX)
-  messages: MeetingMessage[];
-  status: "setup" | "running" | "completed";
-  createdAt: string;
-}
-

@@ -12,9 +12,9 @@ interface TaskAssignModalProps {
 
 export function TaskAssignModal({ agent, onClose, onAssign }: TaskAssignModalProps) {
   const [description, setDescription] = useState("");
-  const [clientId, setClientId] = useState(mockClients[0].id);
+  const [clientId, setClientId] = useState(mockClients[0]?.id || "");
 
-  const client = mockClients.find(c => c.id === clientId)!;
+  const client = (mockClients.find(c => c.id === clientId) || mockClients[0]) as any;
 
   const suggestions = [
     `Rédige 3 posts pour ${client.name} dans le style de ${agent.role}`,
